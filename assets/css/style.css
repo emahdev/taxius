@@ -295,7 +295,9 @@ template {
   color: var(--surface); }
 
 .text-blue {
-  color: var(--blue); }
+  /* color: var(--blue); */
+  color: #031D38; 
+}
 
 .text-critical {
   color: var(--critical); }
@@ -337,7 +339,9 @@ template {
   background-color: var(--surface); }
 
 .bg-blue {
-  background-color: var(--blue); }
+  background-color: #031D38; 
+  /* background-color: var(--blue);  */
+}
 
 .bg-success {
   background-color: var(--success); }
@@ -361,8 +365,9 @@ template {
   background-color: var(--dark); }
 
 .bg-dark-blue {
-  background-color: var(--dark-blue); }
-
+  background-color: #031D38;
+  /* background-color: var(--dark-blue);  */
+}
 .bg-dark-purple {
   background-color: var(--dark-purple); }
 
@@ -1000,7 +1005,9 @@ template {
   border: 1px solid var(--blue); }
 
 .border-blue-2px {
-  border: 2px solid var(--blue); }
+  /* border: 2px solid var(--blue); */
+  border: 2px solid #031D38; 
+}
 
 .border-grey-1px {
   border: 1px solid var(--grey); }
@@ -1133,7 +1140,8 @@ template {
   transition: all ease 0.3s;
   cursor: pointer; }
   .hover-bg-blue:hover {
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
+    background-color: #031D38;
     color: var(--white); }
 
 .hover-border-blue {
@@ -2442,7 +2450,8 @@ template {
       bottom: -2px;
       width: 0;
       height: 2px;
-      background-color: var(--blue);
+      /* background-color: var(--blue); */
+      background-color: #031D38;
       transition: all ease 0.3s; }
     .financial-assessment-block .nav-infor .list-nav .nav-item:hover::after {
       width: 100%; }
@@ -2528,7 +2537,8 @@ template {
           bottom: 0;
           width: 100%;
           height: 0;
-          background-color: var(--blue);
+          /* background-color: var(--blue); */
+          background-color: #D9B76F;
           opacity: 0.6;
           z-index: 1;
           transition: all ease 0.4s; }
@@ -2557,7 +2567,9 @@ template {
         transition: all ease 0.3s;
         z-index: 2; }
         .our-project-block .list-project .row .col-12 .item .arrow:hover {
-          background-color: var(--blue); }
+          /* background-color: var(--blue); */
+          background-color: #031D38; 
+        }
           .our-project-block .list-project .row .col-12 .item .arrow:hover i {
             color: var(--white); }
         .our-project-block .list-project .row .col-12 .item .arrow i {
@@ -3236,7 +3248,9 @@ template {
     margin-left: 4px; }
   .service-block .service-item:hover .service-item-main .heading7,
   .service-block .service-item:hover .service-item-main .heading6 {
-    color: var(--blue); }
+    color: #031D38;
+    /* color: var(--blue);  */
+  }
   .service-block .service-item:hover .service-item-main .heading i.ph-arrow-up-right {
     right: 32px;
     visibility: visible; }
@@ -4240,7 +4254,8 @@ template {
     color: var(--blue); }
 
 .scroll-to-top-btn {
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
+  background-color: #D9B76F;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -4517,13 +4532,18 @@ template {
       width: 46px;
       border: 1px solid transparent;
       outline: none;
-      background-color: var(--blue);
+      /* background-color: var(--blue); */
+      background-color: #D9B76F;
       border-radius: 0 8px 8px 0; }
       #footer .footer-block .row .company-contact .send-block button:hover {
-        background-color: #4d67fa; }
+        /* background-color: #4d67fa; */
+        background-color: #000000;
+      }
 
 #footer .style-two .footer-block {
-  background-color: #173363; }
+  background-color:  #031D38;
+  /* background-color: #173363;  */
+}
 
 #footer .style-three .footer-block {
   background-color: #130E38; }
@@ -4921,7 +4941,7 @@ template {
       margin: 0 60px; }
 
 .style-two .partner-five-col {
-  background-color: #173363;
+  background-color: #031D38;
   margin-top: 0; }
 
 .style-four .partner-five-col {

@@ -78,7 +78,8 @@
 }
 .icon-coin-hand:before {
   content: "\e90d";
-  color: #2868d8;
+  /* color: #2868d8; */
+  color: #031D38;
 }
 .icon-call-blue .path1:before {
   content: "\e90e";
@@ -129,11 +130,13 @@
 }
 .icon-hand-tick:before {
   content: "\e919";
-  color: #2868d8;
+  /* color: #2868d8; */
+  color: #031D38;
 }
 .icon-chart-blue:before {
   content: "\e91a";
-  color: #2868d8;
+  /* color: #2868d8; */
+  color: #031D38;
 }
 .icon-coin-bag:before {
   content: "\e91b";
@@ -145,7 +148,8 @@
 }
 .icon-hand-touch:before {
   content: "\e91d";
-  color: #2868d8;
+  /* color: #2868d8; */
+  color:  #D9B76F;
 }
 .icon-education:before {
   content: "\e91e";
@@ -157,7 +161,8 @@
 }
 .icon-text-search:before {
   content: "\e920";
-  color: #2868d8;
+  /* color: #2868d8; */
+  color: #031D38;
 }
 .icon-coin-chair:before {
   content: "\e921";
