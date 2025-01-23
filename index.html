@@ -138,14 +138,38 @@
                   <div class="heading2 animate__animated animate__fadeInUp animate__delay-0-2s">Asesoría confiable, <br>crecimiento asegurado</div>
                   <div class="body2 text-secondary mt-16 animate__animated animate__fadeInUp animate__delay-0-5s">Optimiza la gestión financiera y estratégica de <br> tu empresa con soluciones integrales en contabilidad, <br> fiscalidad, legalidad y negocios.</div>
                 </div>
-                <div class="animate__animated animate__fadeInUp animate__delay-0-8s">
-                  <form class="button-block mt-16"
-                    action="https://formspree.io/f/xjkgvjyk"
-                    method="POST"
-                  >
-                  <input class="body3 text-secondary" type="text" placeholder="Correo electrónico"/><a class="button-share display-inline-flex hover-bg-blue bg-on-surface text-white text-button pl-28 pr-28 pt-12 pb-12 bora-48 flex-item-center gap-8"><i class="ph ph-arrow-right text-white"></i><span>Comenzar</span></a>
-                </form>
-              </div>
+                <div class="button-block animate__animated animate__fadeInUp animate__delay-0-8s">
+                  <form class="button-block" action="https://formspree.io/f/xjkgvjyk" method="POST">
+                    <div class="input-group">
+                      <input class="body3 text-secondary" type="email" name="email" placeholder="Correo electrónico" required/>
+                      <button type="submit" class="button-share display-inline-flex hover-bg-blue bg-on-surface text-white text-button pl-28 pr-28 pt-12 pb-12 bora-48 flex-item-center gap-8">
+                        <i class="ph ph-arrow-right text-white"></i><span>Comenzar</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                
+                <style>
+                  .input-group {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    height: 59px;
+                  }
+                  .input-group input {
+                    flex: 1;
+                    padding-right: 150px; /* Adjust this value as needed */
+                    
+                    
+                  }
+                  .input-group button {
+                    position: absolute;
+                    right: 5px;
+                    height: 80%;
+                    border: none;
+                    /* background: none; */
+                  }
+                </style>
               </div>
               <div class="slider-img animate__animated animate__fadeInRight animate__delay-0-2s">
                 <div class="bg-main"> <img class="h-100 w-100" src="assets/images/slider/img-3.png" alt=""/></div><img class="box-shadow" src="assets/images/slider/img-2.png" alt=""/><img class="box-shadow" src="assets/images/slider/img-1.png" alt=""/>
