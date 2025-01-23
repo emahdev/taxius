@@ -5079,3 +5079,23 @@ template {
     font-size: 38px; }
   i.fs-48 {
     font-size: 36px; } }
+
+
+    .input-group {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 59px;
+    }
+    .input-group input {
+      flex: 1;
+      padding-right: 150px; 
+      
+      
+    }
+    .input-group button {
+      position: absolute;
+      right: 5px;
+      height: 80%;
+      border: none;
+    }
