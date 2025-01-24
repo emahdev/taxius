@@ -1,0 +1,11 @@
+{
+    "rewrites": [
+        { "source": "/servicios", "destination": "/#servicios" },
+        { "source": "/nosotros", "destination": "/#nosotros" },
+        { "source": "/contacto", "destination": "/#contacto" },
+        { "source": "/gracias", "destination": "/gracias.html" },
+        { "source": "/(.*)", "destination": "/404.html" }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+}

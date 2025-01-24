@@ -143,15 +143,24 @@
                 
 
                 <div class="button-block animate__animated animate__fadeInUp animate__delay-0-8s">
-                  <form class="button-block" action="https://formspree.io/f/xjkgvjyk" method="POST">
+                  <form class="button-block" onsubmit="event.preventDefault(); redirectToContactForm();">
                     <div class="input-group">
-                      <input class="body3 text-secondary" type="email" name="email" placeholder="Correo electrónico" required/>
+                      <input id="emailInput" class="body3 text-secondary" type="email" name="email" placeholder="Correo electrónico" required/>
                       <button type="submit" class="button-share display-inline-flex hover-bg-blue bg-on-surface text-white text-button pl-28 pr-28 pt-12 pb-12 bora-48 flex-item-center gap-8">
                         <i class="ph ph-arrow-right text-white"></i><span>Comenzar</span>
                       </button>
                     </div>
                   </form>
                 </div>
+                <script>
+                  function redirectToContactForm() {
+                    const email = document.getElementById('emailInput').value;
+                    window.location.href = `#contacto`;
+                    setTimeout(() => {
+                      document.querySelector('#contacto #emailInput').value = email;
+                    }, 100); // Delay to ensure the section is loaded
+                  }
+                </script>
 
 
 
@@ -393,43 +402,39 @@
             </div>
             <div class="col-12 col-lg-6">
               <div class="form-block bora-16 bg-white p-28 flex-columns-between gap-20">
-                <form
-                  action="https://formspree.io/f/xjkgvjyk"
-                  method="POST"
-                  >
+                <form action="https://formspree.io/f/xjkgvjyk" method="POST">
                   <div class="heading6">Solicita una asesoría</div>                
                   <div class="row row-gap-20">
-                  
-                  <div class="col-12 col-sm-6"> 
-                    <input class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-8" type="text" placeholder="Nombre" name="name" required/>
-                  </div>
-                  <div class="col-12 col-sm-6"> 
-                    <input class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-8" type="email" placeholder="Correo Electrónico" name="email" required/>
-                  </div>
-                  <div class="col-12"> 
-                    <select class="w-100 bg-surface caption1 pl-12 pt-12 pb-12 bora-8" name="form">
-                    <option value="Asesoría Contable">Asesoría Contable</option>
-                    <option value="Consultoría Fiscal">Consultoría Fiscal</option>
-                    <option value="Asesoría Legal">Asesoría Legal</option>
-                    <option value="Consultoría de Negocios">Consultoría de Negocios</option>
-                    </select><i class="ph ph-caret-down"></i>
-                  </div>
-                  <div class="col-12"> 
-                    <textarea class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-8" name="message" cols="10" rows="4" placeholder="Tu mensaje" required></textarea>
-                  </div>
+                    <div class="col-12 col-sm-6"> 
+                      <input class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-8" type="text" placeholder="Nombre" name="name" required/>
+                    </div>
+                    <div class="col-12 col-sm-6"> 
+                      <input class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-8" type="email" placeholder="Correo Electrónico" name="email" id="emailInput" required/>
+                    </div>
+                    <div class="col-12"> 
+                      <select class="w-100 bg-surface caption1 pl-12 pt-12 pb-12 bora-8" name="Servicio">
+                        <option value="Asesoría Contable">Asesoría Contable</option>
+                        <option value="Consultoría Fiscal">Consultoría Fiscal</option>
+                        <option value="Asesoría Legal">Asesoría Legal</option>
+                        <option value="Consultoría de Negocios">Consultoría de Negocios</option>
+                      </select><i class="ph ph-caret-down"></i>
+                    </div>
+                    <div class="col-12"> 
+                      <textarea class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-8" name="message" cols="10" rows="4" placeholder="Tu mensaje" required></textarea>
+                    </div>
                   </div>
                   <div class="button-block"> 
-                      <button class="button-share hover-button-black bg-blue text-white text-button pl-36 pr-36 pt-12 pb-12 bora-48">Enviar Mensaje</button>
+                    <button class="button-share hover-button-black bg-blue text-white text-button pl-36 pr-36 pt-12 pb-12 bora-48">Enviar Mensaje</button>
                   </div>
-                
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a class="scroll-to-top-btn" href="#header"><i class="ph-bold ph-caret-up"></i></a>
-      <div class="pb-100"></div>
+
+    <a class="scroll-to-top-btn" href="#header"><i class="ph-bold ph-caret-up"></i></a>
+      
     </div>
     <div id="footer">
       
