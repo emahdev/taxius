@@ -195,16 +195,7 @@ if (nextArrow) {
 
 
 
-// remove active homepage 1
-function removeActiveHome() {
-  document.querySelector('.header-menu .sub-nav .active').classList.remove('active')
-  document.querySelector('.header-menu .sub-nav-mobile .active').classList.remove('active')
-}
 
-// get subpage, remove active in homepage 1
-if (document.querySelector('.style-subpage')) {
-  removeActiveHome()
-}
 
 
 // our project home2

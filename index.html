@@ -71,7 +71,7 @@
                 <li class="nav-item h-100 flex-center services"><a class="nav-link" href="#servicios">Servicios </a>
                   
                 </li>
-                <li class="nav-item h-100 flex-center contact"><a class="nav-link" href="#contacto">Contacto <i class="ph ph-caret-down fs-14"></i></a>
+                <li class="nav-item h-100 flex-center contact"><a class="nav-link" href="#contacto">Contacto </a>
                   
                 </li>
               </ul>
@@ -84,34 +84,17 @@
             <div class="menu-mobile-main"> 
               <div class="container"> 
                 <ul class="menu-nav-mobile h-100 pt-4 pb-4">
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-8 pb-8 pl-12 pr-12 pointer home"><a class="fs-14 nav-link-mobile" href="/">Inicio </a>
-                    <ul class="sub-nav-mobile">
-                      <div class="line-x"></div>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8 active"><a class="sub-nav-link fs-14" href="/">Payment Solution</a></li>
-                    </ul>
+                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-8 pb-8 pl-12 pr-12 pointer home  active"><a class="fs-14 nav-link-mobile" href="/">Inicio </a>
+                    
                   </li>
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer about"><a class="fs-14 nav-link-mobile" href="#!">Nosotros <i class="ph-fill ph-caret-down fs-12"></i></a>
-                    <ul class="sub-nav-mobile">
-                      <div class="line-x"></div>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="#nosotros">Misión</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="#nosotros">Visión</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="#nosotros">Nuestro Equipo</a></li>
-                    </ul>
+                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer about"><a class="fs-14 nav-link-mobile" href="#nosotros">Nosotros <i class="ph-fill ph-caret-down fs-12"></i></a>
+                    
                   </li>
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer services"><a class="fs-14 nav-link-mobile" href="#!">Servicios <i class="ph-fill ph-caret-down fs-12"></i></a>
-                    <ul class="sub-nav-mobile">
-                      <div class="line-x"></div>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="#servicios">Asesoría Contable</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="#servicios">Consultoría Fiscal</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="#servicios">Asesoría Legal</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="#servicios">Consultoría de Negocios</a></li>
-                    </ul>
+                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer services"><a class="fs-14 nav-link-mobile" href="#servicios">Servicios <i class="ph-fill ph-caret-down fs-12"></i></a>
+                    
                   </li>
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer contact"><a class="fs-14 nav-link-mobile" href="#!">Contacto <i class="ph-fill ph-caret-down fs-12"></i></a>
-                    <ul class="sub-nav-mobile">
-                      <div class="line-x"></div>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="#contacto">Formulario de Contacto</a></li>
-                    </ul>
+                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer contact"><a class="fs-14 nav-link-mobile" href="#contacto">Contacto <i class="ph-fill ph-caret-down fs-12"></i></a>
+                    
                   </li>
                 </ul>
               </div>
@@ -149,6 +132,7 @@
                     window.location.href = `#contacto`;
                     setTimeout(() => {
                       document.querySelector('#contacto #emailInput').value = email;
+                      document.querySelector('#contacto input[name="name"]').focus();
                     }, 100); // Delay to ensure the section is loaded
                   }
                 </script>
