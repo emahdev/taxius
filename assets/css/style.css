@@ -437,8 +437,7 @@ template {
 .text-button {
   font-size: 16px;
   font-weight: 700;
-  line-height: 26px;
-  text-transform: capitalize; }
+  line-height: 26px; }
 
 .text-button-small {
   font-size: 14px;
